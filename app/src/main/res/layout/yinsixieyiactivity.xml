@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/neibubeijing">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/javabeijing" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45"
+        android:background="@color/javabeijing">
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="25dp"
+            android:scaleType="centerInside"
+            android:paddingLeft="@dimen/size_10"
+            android:paddingRight="@dimen/size_10"
+            android:onClick="back"
+            android:src="@mipmap/arrow_left" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:text=""
+            android:textColor="@color/color_text_black"
+            android:textSize="@dimen/size_16"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></WebView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/size_20"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="@dimen/size_20"
+            android:background="@color/transparent">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_text_black"
+                android:textSize="@dimen/size_14"
+                android:visibility="gone"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/cont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_text_black"
+                android:layout_marginTop="@dimen/size_10"
+                android:textSize="@dimen/size_12"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

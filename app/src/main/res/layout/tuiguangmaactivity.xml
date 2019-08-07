@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/javabeijing"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_50" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="25dp"
+                android:onClick="back"
+                android:paddingLeft="@dimen/size_10"
+                android:paddingRight="@dimen/size_10"
+                android:scaleType="centerInside"
+                android:src="@mipmap/arrow_left" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_16"
+                android:text="@string/TuiTitle"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/titles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TuiTitle1"
+            android:textColor="@color/bbwhite"
+            android:paddingLeft="@dimen/size_25"
+            android:paddingRight="@dimen/size_25"
+            android:paddingTop="@dimen/size_5"
+            android:paddingBottom="@dimen/size_5"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_marginRight="@dimen/size_20"
+            android:layout_marginTop="@dimen/size_20"
+            android:textSize="@dimen/size_16" />
+    <TextView
+        android:id="@+id/titles1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TuiTitle2"
+        android:textColor="@color/bbwhite"
+        android:layout_marginTop="@dimen/size_15"
+        android:textSize="@dimen/size_16" />
+    <TextView
+        android:id="@+id/titles2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TuiTitle3"
+        android:textColor="@color/bbwhite"
+        android:layout_marginTop="@dimen/size_5"
+        android:textSize="@dimen/size_16" />
+    <TextView
+        android:id="@+id/titles4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TuiTitle5"
+        android:textColor="@color/black"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        android:layout_marginTop="@dimen/size_20"
+        android:textSize="@dimen/size_16" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10" >
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_launcher" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/ma_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_25"
+        android:layout_marginRight="@dimen/size_25"
+        android:layout_marginTop="@dimen/size_10"
+        android:gravity="center"
+        android:maxLines="2"
+        android:textSize="@dimen/size_12"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/fuzhi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40"
+        android:layout_marginTop="@dimen/size_10"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/size_30"
+        android:layout_marginRight="@dimen/size_30"
+        android:background="@drawable/fabi_button"
+        android:text="复制邀请链接"
+        android:textSize="@dimen/size_14"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/conts_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10"
+        android:padding="@dimen/size_20"
+        android:textSize="@dimen/size_12"
+        android:text="sdsdsadsdadssd"
+        android:textColor="@color/black"/>
+</LinearLayout>

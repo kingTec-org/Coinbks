@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sengmei.kline">
+
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission
+        android:name="android.permission.CHANGE_CONFIGURATION"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name="com.sengmei.meililian.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/log"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/log"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name="com.sengmei.meililian.FirstActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".KLineActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <!-- android:launchMode="singleInstance" 防止重复跳转-->
+        <activity
+            android:name="com.sengmei.meililian.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.MainActivity111"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.E_WodeZiChan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.E_FaBiGuanLi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.C2C_XiangQing"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.C2C_XiangQing1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.FinancialActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.FinancialActivity1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.E_WoDeJiaoYi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.JiaoYiZhangHu1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.JiaoYiZhangHu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.DianKaTiBiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.JiaoYiFaBi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.ChongZhiGuanLi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.E_BanZhuZhongXin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.E_GeRenZhongXin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.certificateCamera.CameraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.ShenFen_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.TuiGuangMaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.ShenFen_Activity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.ShenFen_Activity1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.E_AnQuanZhongXin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.E_ShouKuanFangShi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.ShouJiYanZhengActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.E_ShouJiYanZheng"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.YouXiangYanZhengActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.E_YouXiangZheng"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.E_TiBiDiZhi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.E_TiBiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.E_TiBiTianJiaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.WoDeGongDanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.TianJianGongDan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.LanguageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.YinSiXieYiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.YinSiXieYi1Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.GuangGaoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.E_GuanYuWoMen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.SheZhiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.WoDeTangGuoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.SXZhiFuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.TangGuoDuiHuanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.E_JiaoYiWaKuangActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.E_SuoBiListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.WoDeSuoCangActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.ZhuCeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.ZhuCeActivity1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.ForgetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.ForgetActivity1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.Forget2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.ZhuCeYXActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.MiMaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.YanZhengMaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.HuaZhuanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.ShangPuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.E_ShangPuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.E_ShangPuListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.DingDanJiLu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.DingDanJiLuShangPu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.DingDanXiangQingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.DingDanXiangQingActivity1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.DingDanXiangQingActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.DingDanXiangQingActivity22"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.FaBiMiMaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.JiaoYiChongZhiMiMa"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.AddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.MaiJiaSouKuan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.C2CActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.C2CActivity1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.C2CFaBuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.C2CFaBuActivity1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.C2CJiaoYiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sengmei.meililian.Activity.C2CJiaoYiActivity1"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".MyService" />
+        <service android:name="com.sengmei.MyService" />
+    </application>
+
+</manifest>

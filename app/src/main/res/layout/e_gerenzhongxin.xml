@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/javabeijing"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/neibubeijing"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_50" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="25dp"
+                android:onClick="back"
+                android:paddingLeft="@dimen/size_10"
+                android:paddingRight="@dimen/size_10"
+                android:scaleType="centerInside"
+                android:src="@mipmap/arrow_left" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:padding="@dimen/size_10"
+        android:text="个人中心"
+        android:textColor="@color/color_text_black"
+        android:textSize="@dimen/size_25" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_10" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0.1"
+        android:background="@color/neibubeijing"/>
+    <RelativeLayout
+        android:id="@+id/renzheng"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/size_20"
+            android:text="身份认证"
+            android:textColor="@color/color_text_black"
+            android:textSize="@dimen/size_16" />
+
+        <TextView
+            android:id="@+id/renzhen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_30"
+            android:textColor="@color/color_text_FireBrick"
+            android:text="去认证"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_14" />
+        <ImageView
+            android:layout_width="@dimen/size_15"
+            android:layout_height="@dimen/size_15"
+            android:src="@mipmap/arrow_right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size_10"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0.1"
+            android:background="@color/neibubeijing"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_text_gray"
+            android:textSize="@dimen/size_14"
+            android:layout_marginLeft="@dimen/size_30"
+            android:layout_marginTop="@dimen/size_20"
+            android:text="认证后可提升提币额度"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_text_gray"
+            android:textSize="@dimen/size_14"
+            android:layout_marginLeft="@dimen/size_30"
+            android:layout_marginBottom="@dimen/size_20"
+            android:layout_marginTop="@dimen/size_3"
+            android:text="认证后可进行法币交易"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0.1"
+            android:background="@color/neibubeijing"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0.1"
+            android:background="@color/neibubeijing"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@color/javabeijing"
+            android:layout_marginTop="@dimen/size_0.1"
+            android:paddingLeft="@dimen/size_20"
+            android:paddingRight="@dimen/size_20">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="姓名"
+                android:textColor="@color/button_text_no"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/size_14"/>
+            <TextView
+                android:id="@+id/names"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="--"
+                android:textColor="@color/button_text_no"
+                android:textSize="@dimen/size_12"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0.1"
+            android:background="@color/neibubeijing"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@color/javabeijing"
+            android:layout_marginTop="@dimen/size_0.1"
+            android:paddingLeft="@dimen/size_20"
+            android:paddingRight="@dimen/size_20">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="账户"
+                android:textColor="@color/button_text_no"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/size_14"/>
+            <TextView
+                android:id="@+id/zhanghu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="--"
+                android:textColor="@color/button_text_no"
+                android:textSize="@dimen/size_12"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0.1"
+            android:background="@color/neibubeijing"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@color/javabeijing"
+            android:layout_marginTop="@dimen/size_0.1"
+            android:paddingLeft="@dimen/size_20"
+            android:paddingRight="@dimen/size_20">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="UID"
+                android:textColor="@color/button_text_no"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/size_14"/>
+            <TextView
+                android:id="@+id/ids"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="--"
+                android:textColor="@color/button_text_no"
+                android:textSize="@dimen/size_12"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0.1"
+            android:background="@color/neibubeijing"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@color/javabeijing"
+            android:layout_marginTop="@dimen/size_0.1"
+            android:paddingLeft="@dimen/size_20"
+            android:paddingRight="@dimen/size_20">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="证件号"
+                android:textColor="@color/button_text_no"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/size_14"/>
+            <TextView
+                android:id="@+id/zhengjianhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="--"
+                android:textColor="@color/button_text_no"
+                android:textSize="@dimen/size_12"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0.1"
+            android:background="@color/neibubeijing"/>
+    </LinearLayout>
+</LinearLayout>

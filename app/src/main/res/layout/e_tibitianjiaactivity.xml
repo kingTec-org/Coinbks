@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/javabeijing"
+    android:id="@+id/ll">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_50">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="25dp"
+                android:scaleType="centerInside"
+                android:paddingLeft="@dimen/size_10"
+                android:paddingRight="@dimen/size_10"
+                android:onClick="back"
+                android:src="@mipmap/arrow_left" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="@dimen/size_20"
+        android:paddingRight="@dimen/size_20"
+        android:layout_marginTop="@dimen/size_10"
+        android:textColor="@color/color_text_black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="添加地址"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="22dp"
+        android:layout_marginTop="@dimen/size_50"
+        android:paddingRight="@dimen/size_20"
+        android:textColor="@color/color_text_black"
+        android:textSize="12dp"
+        android:text="地址"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/size_10"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="30dp">
+        <EditText
+            android:id="@+id/addrss"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/color_text_gray"
+            android:textSize="@dimen/size_14"
+            android:ellipsize="end"
+            android:paddingLeft="5dp"
+            android:background="@color/neibubeijing"
+            android:hint="请输入或粘贴地址"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_20"
+            android:visibility="gone"
+            android:src="@mipmap/saoma"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0.1"
+        android:background="@color/color_line_gray"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="22dp"
+        android:layout_marginTop="@dimen/size_20"
+        android:paddingRight="@dimen/size_20"
+        android:textColor="@color/color_text_black"
+        android:textSize="12dp"
+        android:text="备注"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/size_10"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="30dp">
+        <EditText
+            android:id="@+id/beizhu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/color_text_gray"
+            android:textSize="@dimen/size_14"
+            android:ellipsize="end"
+            android:paddingLeft="5dp"
+            android:background="@color/neibubeijing"
+            android:hint="请输入或粘贴备注"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0.1"
+        android:background="@color/color_line_gray"/>
+
+    <TextView
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textSize="@dimen/size_16"
+        android:textColor="@color/black"
+        android:text="确定"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/blue"/>
+</LinearLayout>

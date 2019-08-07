@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Coinbkb</string>
+    <string name="left_tag">LEFT</string>
+    <string name="touch_to_focus">触摸屏幕对焦</string>
+
+
+    <string name="title">设置</string>
+    <string name="title1">语言</string>
+
+
+    <!--wode-->
+    <string name="wdzc">我的资产</string>
+    <string name="fbdd">法币订单</string>
+    <string name="wdjy">我的交易</string>
+    <string name="grzx">个人中心</string>
+    <string name="aqzx">安全中心</string>
+    <string name="skfs">收款方式</string>
+    <string name="tbdz">提币地址</string>
+    <string name="gywm">关于我们</string>
+    <string name="TuiTitle">我的推广码</string>
+    <string name="TuiGuang">--</string>
+    <string name="TuiTitle1">注册奖励4900，邀请奖励4900!</string>
+    <string name="TuiTitle2">全球数字货币交易所,</string>
+    <string name="TuiTitle3">免费赠送百倍币!</string>
+    <string name="TuiTitle5">邀请码</string>
+    <string name="TangGuotitle">我的糖果</string>
+    <string name="TangGuotitle1">领取数量</string>
+    <string name="TangGuotitle2">邀请奖励</string>
+    <string name="ShouXuZhiFu1">手续费支付</string>
+    <string name="ShouXuZhiFu3">平台币支付</string>
+    <string name="ShouXuZhiFu4">说明:在BQB平台上参与交易的用户，无论交易和何种代币，在需支付手续费时，如持有足够额BQB币，系统系统会对所需
+    支付的手续费进行打折优惠，并按照当时市值折算出等值BKBC数量，使用BKBC币完成手续费的支付。在用户中心可以自行关闭开启BQB抵扣开关。目前折扣50%。</string>
+    <string name="TangGuoDuiHuan">糖果兑换</string>
+    <string name="TangGuoDuiHuan1">可用</string>
+</resources>
